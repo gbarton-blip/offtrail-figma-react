@@ -1,0 +1,33 @@
+:root {
+  font-family: "Times New Roman", Georgia, serif;
+  background: #ff932e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.title-screen {
+  align-items: center;
+  background: #ff932e;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 40px;
+}
+
+.wordmark {
+  display: block;
+  max-width: min(917.14px, 90vw);
+  width: 100%;
+}
