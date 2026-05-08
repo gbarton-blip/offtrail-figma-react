@@ -27,6 +27,7 @@ import {
   MapCanvas,
   Footer,
 } from "./components/SystemComponents";
+import { Icon, BrandIcon, NavTab } from "./components/IconSets";
 
 export default function App() {
   return (
@@ -102,6 +103,13 @@ export default function App() {
 
       <section className="ot-section">
         <h2>Navigation + Overlays</h2>
+        <div className="ot-row">
+          <Icon glyph="check" />
+          <Icon glyph="plus" />
+          <BrandIcon glyph="home" />
+          <BrandIcon glyph="map" />
+          <NavTab glyph="home" label="home" active />
+        </div>
         <WebNav />
         <WebNav translucent />
         <AppNav />

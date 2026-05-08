@@ -1,3 +1,5 @@
+import { NavTab } from "./IconSets";
+
 const FOOTER_WORDMARK =
   "https://www.figma.com/api/mcp/asset/e37f508e-c347-43e8-b308-4b64eec70264";
 const TILE_WEATHER_ICON =
@@ -12,13 +14,15 @@ const MAP_CANVAS =
   "https://www.figma.com/api/mcp/asset/3c127c2a-440c-4e8e-97a8-3e07f2580ad9";
 
 export function AppNav({ active = "home" }) {
-  const tabs = ["home", "map", "profile"];
+  const tabs = [
+    { key: "home", glyph: "home", label: "home" },
+    { key: "map", glyph: "map", label: "map" },
+    { key: "profile", glyph: "user", label: "profile" },
+  ];
   return (
     <nav className="ot-app-nav">
       {tabs.map((tab) => (
-        <button key={tab} className={active === tab ? "is-active" : ""} type="button">
-          {tab}
-        </button>
+        <NavTab key={tab.key} glyph={tab.glyph} label={tab.label} active={active === tab.key} />
       ))}
     </nav>
   );

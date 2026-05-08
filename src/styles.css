@@ -562,16 +562,30 @@ h2 {
   align-items: center;
 }
 
-.ot-app-nav button {
+.ot-glyph-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.ot-brand-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.ot-nav-tab {
   border: 0;
   background: transparent;
   color: var(--text-muted);
   text-transform: uppercase;
   font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 12px;
+  font-size: 11px;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 6px 8px;
 }
 
-.ot-app-nav button.is-active {
+.ot-nav-tab.is-active {
   color: var(--brand);
 }
 
