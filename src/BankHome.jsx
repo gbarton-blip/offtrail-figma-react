@@ -65,6 +65,7 @@ export default function BankHome() {
                     variant="primary"
                     aria-label={action.label}
                     onClick={() => navigate(action.path)}
+                    style={action.id === 'more' ? { border: '1px solid rgb(0, 0, 0)' } : undefined}
                   />
                   <span className="bank-home__action-label">{action.label}</span>
                 </div>
@@ -74,7 +75,7 @@ export default function BankHome() {
 
           {/* Accounts (CardGuide repurposed as card artwork) */}
           <section className="bank__section" data-parity-section="accounts">
-            <AccountsSection title="Accounts" linkLabel="Manage">
+            <AccountsSection title="Accounts" linkLabel="Manage" titleStyle={{ fontSize: '20px' }}>
               {accounts.map((account) => (
                 <CardGuide
                   key={account.id}
