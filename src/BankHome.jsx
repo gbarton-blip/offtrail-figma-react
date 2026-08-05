@@ -88,7 +88,7 @@ export default function BankHome() {
 
           {/* Recent transactions */}
           <section className="bank__section" data-parity-section="transactions">
-            <p className="bank__section-heading">Recent activity</p>
+            <p className="bank__section-heading" style={{ fontSize: '18px' }}>Recent activity</p>
             <div className="bank-home__filters">
               {filters.map((filter, index) => (
                 <Chip key={filter} label={filter} active={index === 0} />
