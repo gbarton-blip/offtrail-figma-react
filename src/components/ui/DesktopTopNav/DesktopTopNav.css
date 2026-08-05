@@ -1,0 +1,97 @@
+.desktop-top-nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-top-nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    z-index: 30;
+    display: flex;
+    width: min(628px, calc(100vw - 64px));
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--otds-size-padding-small);
+    border: 1px solid transparent;
+    border-radius: var(--otds-size-corner-small);
+    transform: translateX(-50%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .desktop-top-nav--dark {
+    color: var(--otds-white-100);
+    background: var(--otds-white-600);
+    border-color: var(--otds-white-600);
+  }
+
+  .desktop-top-nav--light {
+    color: var(--otds-black-100);
+    background: rgba(232, 232, 232, 0.86);
+    border-color: rgba(16, 7, 27, 0.08);
+  }
+
+  .desktop-top-nav__brand,
+  .desktop-top-nav__link,
+  .desktop-top-nav__search-button,
+  .desktop-top-nav__avatar-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .desktop-top-nav__brand {
+    padding: 0;
+  }
+
+  .desktop-top-nav__logo {
+    width: 42px;
+    height: auto;
+    color: currentColor;
+  }
+
+  .desktop-top-nav__links {
+    display: flex;
+    align-items: center;
+    gap: var(--otds-size-gap-medium);
+  }
+
+  .desktop-top-nav__link {
+    padding: 0;
+    font-family: var(--otds-font-family-mono);
+    font-size: var(--otds-size-font-xsmall, 12px);
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .desktop-top-nav__search-button {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .desktop-top-nav__search-button .brand-icon-glyph {
+    width: 16px;
+    height: 16px;
+  }
+
+  .desktop-top-nav__avatar-button {
+    padding: 0;
+    border-radius: var(--otds-size-corner-full);
+  }
+
+  .desktop-top-nav__brand:focus-visible,
+  .desktop-top-nav__link:focus-visible,
+  .desktop-top-nav__search-button:focus-visible,
+  .desktop-top-nav__avatar-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+}

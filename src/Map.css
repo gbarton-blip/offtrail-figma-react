@@ -1,0 +1,139 @@
+.map-screen {
+  height: 100svh;
+  overflow: hidden;
+  background-color: var(--otds-bg-brand-primary);
+}
+
+.map-screen__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* --- Map region: fills available space above the bottom sheet --- */
+
+.map-screen__map-region {
+  position: relative;
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-screen__map {
+  position: absolute;
+  inset: 0;
+}
+
+/* --- Search input pinned near the top of the map region --- */
+
+.map-screen__search {
+  position: absolute;
+  top: var(--otds-size-padding-medium);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.map-screen__search--desktop {
+  display: none;
+}
+
+/* --- Filter chips --- */
+
+.map-screen__tabs {
+  display: flex;
+  gap: var(--otds-size-gap-small);
+  padding: 0 var(--otds-size-padding-medium);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+
+.map-screen__tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- Bottom sheet content --- */
+
+.map-screen__sheet {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.map-screen__events {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-medium);
+  padding: 0 var(--otds-size-padding-medium);
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .map-screen .app-shell__nav {
+    display: none;
+  }
+
+  .map-screen__content {
+    position: relative;
+  }
+
+  .map-screen__map-region {
+    flex: 1 1 auto;
+  }
+
+  .map-screen__search--mobile {
+    display: none;
+  }
+
+  .map-screen__search--desktop {
+    display: flex;
+    position: static;
+    padding: var(--otds-size-padding-medium) var(--otds-size-padding-medium) 0;
+    flex-shrink: 0;
+  }
+
+  .map-screen__search--desktop .search-input {
+    width: 100%;
+  }
+
+  .map-screen__sheet {
+    position: absolute;
+    top: 80px;
+    left: 12px;
+    bottom: 12px;
+    width: var(--otds-app-panel-width);
+    height: auto;
+    border-radius: var(--otds-size-corner-large);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(31, 32, 40, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 2;
+  }
+
+  .map-screen__events .card-event--small .card-event__meta {
+    display: none;
+  }
+
+  .map-screen__sheet.bottom-sheet--default {
+    height: auto;
+  }
+
+  .map-screen__sheet .bottom-sheet__handle-bar {
+    display: none;
+  }
+
+  .map-screen__tabs {
+    padding: var(--otds-size-padding-medium) var(--otds-size-padding-medium) 0;
+  }
+
+  .map-screen__events {
+    padding: var(--otds-size-padding-medium) 16px;
+  }
+}

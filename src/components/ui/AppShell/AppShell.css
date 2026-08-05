@@ -1,0 +1,31 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100svh;
+  background-color: var(--otds-bg-brand-primary);
+}
+
+.app-shell--nav-all {
+  padding-bottom: var(--otds-app-nav-size);
+}
+
+.app-shell__main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app-shell--nav-desktop .app-shell__nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .app-shell--nav-all {
+    padding-bottom: 0;
+  }
+
+  .app-shell--nav-desktop .app-shell__nav {
+    display: flex;
+  }
+}

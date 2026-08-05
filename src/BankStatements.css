@@ -1,0 +1,83 @@
+.bank-statements__filters {
+  gap: var(--otds-size-gap-medium, 16px);
+}
+
+.bank-statements__years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--otds-size-gap-small, 8px);
+}
+
+.bank-statements__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-small, 8px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bank-statements__row {
+  display: flex;
+  align-items: center;
+  gap: var(--otds-size-gap-medium, 16px);
+  width: 100%;
+  padding: var(--otds-size-padding-small, 12px) 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.bank-statements__row-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.bank-statements__period {
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-weight: 600;
+  font-size: var(--otds-size-font-medium, 16px);
+  line-height: 1.4;
+  color: var(--otds-color-primary, #fff);
+}
+
+.bank-statements__meta {
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-size: var(--otds-size-font-small, 14px);
+  line-height: 1.4;
+  color: var(--otds-color-tertiary, rgba(255, 255, 255, 0.4));
+}
+
+.bank-statements__row-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.bank-statements__balance {
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-size: var(--otds-size-font-small, 14px);
+  line-height: 1.4;
+  color: var(--otds-color-primary, #fff);
+  white-space: nowrap;
+}
+
+.bank-statements__format {
+  font-family: var(--otds-font-family-mono, monospace);
+  font-size: var(--otds-size-font-small, 14px);
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--otds-color-secondary, rgba(255, 255, 255, 0.6));
+}
+
+.bank-statements__caret {
+  flex-shrink: 0;
+  color: var(--otds-color-secondary, rgba(255, 255, 255, 0.6));
+}

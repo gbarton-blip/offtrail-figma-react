@@ -1,0 +1,47 @@
+.search-input {
+  display: flex;
+  gap: var(--otds-size-padding-small);
+  align-items: center;
+  width: var(--otds-app-control-width, 320px);
+  max-width: calc(100vw - var(--otds-app-gutter-inline, 16px) * 2);
+  padding: var(--otds-size-padding-small) var(--otds-size-padding-medium);
+  background-color: var(--otds-bg-on-brand);
+  border: 1px solid var(--otds-color-dim);
+  border-radius: var(--otds-size-corner-full);
+  backdrop-filter: blur(37px);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.search-input__icon {
+  flex-shrink: 0;
+  color: var(--otds-color-secondary);
+}
+
+.search-input__text {
+  flex: 1 1 0;
+  font-family: var(--otds-font-family-sans);
+  font-size: var(--otds-size-font-medium);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  white-space: nowrap;
+  margin: 0;
+  min-width: 0;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.search-input--placeholder .search-input__text {
+  color: var(--otds-color-secondary);
+}
+
+.search-input--active .search-input__text {
+  color: var(--otds-color-primary);
+}
+
+.search-input__text::placeholder {
+  color: var(--otds-color-secondary);
+}

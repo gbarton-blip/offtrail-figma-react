@@ -1,0 +1,53 @@
+:root {
+  --otds-breakpoint-tablet: 768px;
+  --otds-breakpoint-desktop: 1024px;
+  --otds-breakpoint-wide: 1280px;
+
+  --otds-app-gutter: var(--otds-size-padding-medium);
+  --otds-app-gutter-inline: var(--otds-app-gutter);
+  --otds-app-gutter-block: var(--otds-app-gutter);
+  --otds-app-page-max: 1180px;
+  --otds-app-readable-max: 680px;
+  --otds-app-panel-width: min(100%, 400px);
+  --otds-app-nav-size: 64px;
+  --otds-app-grid-gap: var(--otds-size-padding-xlarge);
+  --otds-app-control-width: min(100%, 320px);
+  --otds-app-density-block: var(--otds-size-padding-xlarge);
+  --otds-app-content-bottom: var(--otds-app-nav-size);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --otds-app-gutter: var(--otds-size-padding-large);
+    --otds-app-gutter-inline: var(--otds-size-padding-large);
+    --otds-app-gutter-block: var(--otds-size-padding-large);
+    --otds-app-grid-gap: var(--otds-size-gap-xlarge);
+    --otds-app-control-width: min(100%, 420px);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --otds-app-gutter: var(--otds-size-padding-xlarge);
+    --otds-app-gutter-inline: clamp(32px, 4vw, 64px);
+    --otds-app-gutter-block: var(--otds-size-padding-xlarge);
+    --otds-app-nav-size: clamp(200px, 18vw, 240px);
+    --otds-app-panel-width: clamp(340px, 28vw, 400px);
+    --otds-app-grid-gap: var(--otds-size-gap-xlarge);
+    --otds-app-control-width: min(100%, 520px);
+    --otds-app-density-block: var(--otds-size-gap-xlarge);
+    --otds-app-content-bottom: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --otds-app-page-max: 1320px;
+    --otds-app-panel-width: clamp(380px, 28vw, 440px);
+    --otds-app-grid-gap: var(--otds-size-gap-xxlarge);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

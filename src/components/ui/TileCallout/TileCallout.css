@@ -1,0 +1,50 @@
+.tile-callout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: min(100%, 170px);
+  min-height: 96px;
+  height: auto;
+  flex: 0 0 auto;
+  padding: var(--otds-size-padding-small);
+  border-top: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-left: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-right: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-bottom: var(--otds-size-border-bottom) solid var(--otds-color-border-secondary);
+  border-radius: var(--otds-size-corner-medium);
+  overflow: hidden;
+  box-sizing: border-box;
+  color: var(--otds-color-alt);
+}
+
+.tile-callout--subtle {
+  background-color: var(--otds-bg-on-brand);
+}
+
+.tile-callout--highlight {
+  background-color: var(--otds-bg-brand-secondary);
+}
+
+.tile-callout__label {
+  font-family: var(--otds-font-family-mono);
+  font-size: var(--otds-size-font-small);
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+}
+
+.tile-callout__value {
+  font-family: var(--otds-font-family-headline);
+  font-size: var(--otds-size-font-xlarge);
+  font-weight: 400;
+  font-variation-settings: 'BLED' 0, 'SCAN' 0;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin: 0;
+}

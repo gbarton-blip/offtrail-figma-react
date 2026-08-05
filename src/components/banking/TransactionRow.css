@@ -1,0 +1,46 @@
+.transaction-row {
+  display: flex;
+  align-items: center;
+  gap: var(--otds-size-gap-medium, 16px);
+  width: 100%;
+  list-style: none;
+}
+
+.transaction-row__text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--otds-size-gap-xsmall, 4px);
+  min-width: 0;
+}
+
+.transaction-row__merchant {
+  margin: 0;
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-weight: 600;
+  font-size: var(--otds-size-font-medium, 16px);
+  color: var(--otds-color-primary, #fff);
+}
+
+.transaction-row__note {
+  margin: 0;
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-weight: 400;
+  font-size: var(--otds-size-font-small, 14px);
+  line-height: 18px;
+  color: var(--otds-color-tertiary, rgba(255, 255, 255, 0.4));
+}
+
+.transaction-row__amount {
+  margin: 0;
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-weight: 400;
+  font-size: var(--otds-size-font-small, 14px);
+  line-height: 18px;
+  color: var(--otds-color-primary, #fff);
+  white-space: nowrap;
+}
+
+.transaction-row__amount--credit {
+  color: var(--otds-color-brand-tertiary, #ffbf58);
+}

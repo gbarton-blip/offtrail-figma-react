@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+if ! command -v node &> /dev/null; then
+  echo "Node.js not found. Installing via Homebrew..."
+  brew install node
+else
+  echo "Node.js $(node --version) is already installed."
+fi
+
+if ! command -v watchman &> /dev/null; then
+  echo "Watchman not found. Installing via Homebrew..."
+  brew install watchman
+else
+  echo "Watchman is already installed."
+fi
+
+echo "System dependencies are ready."

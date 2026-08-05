@@ -1,0 +1,62 @@
+.bank-tab-bar {
+  flex-shrink: 0;
+  z-index: 10;
+  width: 100%;
+  background: var(--otds-bg-brand-primary, #10071b);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.bank-tab-bar__items {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.bank-tab-bar__tab {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--otds-size-gap-xsmall, 4px);
+  min-width: 0;
+}
+
+.bank-tab-bar__label {
+  font-family: var(--otds-font-family-mono, monospace);
+  font-size: var(--otds-size-font-small, 14px);
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--otds-color-secondary, rgba(255, 255, 255, 0.6));
+  white-space: nowrap;
+}
+
+/* Match Figma mobile bottom-nav layout (icon stack + external label). */
+.bank-tab-bar .nav-tab {
+  width: 100%;
+  height: 52px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+}
+
+.bank-tab-bar .nav-tab__indicator {
+  position: static;
+  width: 100%;
+  height: 2px;
+  transform: none;
+}
+
+.bank-tab-bar .nav-tab__icon {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  color: var(--otds-color-primary, #fff);
+}
+
+.bank-tab-bar .nav-tab--active .nav-tab__icon {
+  color: var(--otds-color-brand-primary, #ff932e);
+}

@@ -1,0 +1,200 @@
+:root {
+  /* --- Existing app tokens --- */
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #16171d;
+  --border: #2e303a;
+  --code-bg: #1f2028;
+  --accent: #c084fc;
+  --accent-bg: rgba(192, 132, 252, 0.15);
+  --accent-border: rgba(192, 132, 252, 0.5);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  /* --- OTDS Design System: Font Families --- */
+  --otds-font-family-headline: 'Workbench', sans-serif;
+  --otds-font-family-sans: 'Inter', sans-serif;
+  --otds-font-family-mono: 'Geist Mono', monospace;
+
+  /* --- OTDS Design System: Font Sizes --- */
+  --otds-size-font-10xlarge: 88px;
+  --otds-size-font-7xlarge: 58px;
+  --otds-size-font-display: 40px;
+  --otds-size-font-3xlarge: 28px;
+  --otds-size-font-xlarge: 24px;
+  --otds-size-font-large: 18px;
+  --otds-size-font-medium: 16px;
+  --otds-size-font-small: 14px;
+  --otds-size-font-body: 16px;
+  --otds-size-font-heading: 24px;
+
+  /* --- OTDS Design System: Spacing — Padding --- */
+  --otds-size-padding-xxsmall: 4px;
+  --otds-size-padding-xsmall: 8px;
+  --otds-size-padding-small: 12px;
+  --otds-size-padding-medium: 16px;
+  --otds-size-padding-large: 24px;
+  --otds-size-padding-xlarge: 32px;
+  --otds-size-padding-xxlarge: 56px;
+
+  /* --- OTDS Design System: Spacing — Gap --- */
+  --otds-size-gap-xsmall: 4px;
+  --otds-size-gap-small: 8px;
+  --otds-size-gap-medium: 16px;
+  --otds-size-gap-large: 24px;
+  --otds-size-gap-xlarge: 40px;
+  --otds-size-gap-xxlarge: 56px;
+
+  /* --- OTDS Design System: Corner Radius --- */
+  /* --- OTDS Design System: Letter Spacing --- */
+  --otds-size-letter-spacing-snug: -2px;
+
+  /* --- OTDS Design System: Corner Radius --- */
+  --otds-size-corner-small: 4px;
+  --otds-size-corner-medium: 8px;
+  --otds-size-corner-large: 12px;
+  --otds-size-corner-full: 999px;
+  --ads-size-corner: 32px;
+
+  /* --- OTDS Design System: Borders --- */
+  --otds-size-border: 0.5px;
+  --otds-size-border-bottom: 1px;
+  --ads-size-border: 1px;
+  --sds-size-stroke-border: 1px;
+
+  /* --- OTDS Design System: Semantic Colors — Foreground --- */
+  --otds-color-primary: #ffffff;
+  --otds-color-secondary: rgba(255, 255, 255, 0.6);
+  --otds-color-tertiary: rgba(255, 255, 255, 0.4);
+  --otds-color-dim: rgba(255, 255, 255, 0.1);
+  --otds-color-brand-primary: #ff932e;
+  --otds-color-brand-secondary: #9e4700;
+  --otds-color-brand-tertiary: #ffbf58;
+  --otds-color-alt: #d2edff;
+  --otds-color-on-reverse: #2c3039;
+  --otds-color-on-reverse-secondary: rgba(16, 7, 27, 0.2);
+
+  /* --- OTDS Design System: Semantic Colors — Border --- */
+  --otds-color-border-primary: #ffbf58;
+  --otds-color-border-secondary: #bbe4ff;
+
+  /* --- OTDS Design System: Semantic Colors — Background --- */
+  --otds-bg-brand-primary: #10071b;
+  --otds-bg-brand-secondary: #424857;
+  --otds-bg-on-brand: rgba(255, 255, 255, 0.1);
+  --otds-bg-map: #595360;
+
+  /* --- OTDS Design System: Black Palette --- */
+  --otds-black-100: #10071b;
+  --otds-black-200: rgba(16, 7, 27, 0.8);
+  --otds-black-300: rgba(16, 7, 27, 0.6);
+  --otds-black-400: rgba(16, 7, 27, 0.4);
+  --otds-black-500: rgba(16, 7, 27, 0.2);
+  --otds-black-600: rgba(16, 7, 27, 0.09);
+
+  /* --- OTDS Design System: White Palette --- */
+  --otds-white-100: #ffffff;
+  --otds-white-200: rgba(255, 255, 255, 0.8);
+  --otds-white-300: rgba(255, 255, 255, 0.6);
+  --otds-white-400: rgba(255, 255, 255, 0.4);
+  --otds-white-500: rgba(255, 255, 255, 0.2);
+  --otds-white-600: rgba(255, 255, 255, 0.1);
+
+  /* --- OTDS Design System: Grey Palette --- */
+  --otds-grey-100: #353535;
+  --otds-grey-200: #5a5a5a;
+  --otds-grey-300: #848484;
+  --otds-grey-400: #aaaaaa;
+  --otds-grey-500: #d4d4d4;
+  --otds-grey-600: #e8e8e8;
+
+  /* --- OTDS Design System: Orange Palette --- */
+  --otds-orange-100: #732c00;
+  --otds-orange-200: #9e4700;
+  --otds-orange-300: #e76f00;
+  --otds-orange-400: #ff932e;
+  --otds-orange-500: #ffbf58;
+  --otds-orange-600: #efe5cd;
+
+  /* --- OTDS Design System: Blue Palette --- */
+  --otds-blue-100: #2c3039;
+  --otds-blue-200: #424857;
+  --otds-blue-300: #5f788e;
+  --otds-blue-400: #86a8c0;
+  --otds-blue-500: #bbe4ff;
+  --otds-blue-600: #d2edff;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  overflow-x: clip;
+}
+
+#root {
+  min-height: 100svh;
+  overflow-x: clip;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}

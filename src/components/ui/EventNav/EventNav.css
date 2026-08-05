@@ -1,0 +1,38 @@
+.event-nav {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--otds-bg-brand-secondary, #424857);
+  border-top: 1px solid var(--otds-color-dim, rgba(255, 255, 255, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--otds-size-padding-medium, 16px) var(--otds-size-padding-medium, 16px) var(--otds-size-padding-xlarge, 32px);
+}
+
+.event-nav__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-xsmall, 4px);
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: var(--otds-font-family-mono, 'Geist_Mono:Regular', sans-serif);
+  font-weight: 400;
+  font-size: var(--otds-size-font-small, 14px);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.event-nav__price {
+  color: var(--otds-color-primary, white);
+  margin: 0;
+  white-space: nowrap;
+  min-width: min-content;
+}
+
+.event-nav__time,
+.event-nav__location {
+  color: var(--otds-color-secondary, rgba(255, 255, 255, 0.6));
+  margin: 0;
+  white-space: nowrap;
+}

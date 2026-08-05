@@ -1,0 +1,48 @@
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--otds-size-corner-full);
+  overflow: clip;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Sizes */
+.icon-button--medium {
+  width: 40px;
+  height: 40px;
+  padding: var(--otds-size-padding-small);
+}
+
+.icon-button--small {
+  width: 32px;
+  height: 32px;
+  padding: var(--otds-size-gap-small);
+}
+
+/* Variants */
+.icon-button--primary {
+  background-color: var(--otds-color-brand-primary);
+  color: var(--otds-color-on-reverse);
+}
+
+.icon-button--outline {
+  background-color: transparent;
+  border: var(--ads-size-border) solid var(--otds-color-brand-primary);
+  color: var(--otds-color-brand-primary);
+}
+
+.icon-button--neutral {
+  background-color: var(--otds-color-dim);
+  border: var(--sds-size-stroke-border) solid var(--otds-color-dim);
+  color: var(--otds-color-primary);
+}
+
+/* State */
+.icon-button--disabled {
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
+}

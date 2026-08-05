@@ -1,0 +1,28 @@
+.chip {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 var(--otds-size-padding-medium);
+  border: 1px solid var(--otds-color-dim);
+  border-radius: var(--otds-size-corner-full);
+  font-family: var(--otds-font-family-sans);
+  font-size: var(--otds-size-font-medium);
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: clip;
+  cursor: pointer;
+}
+
+/* Active state */
+.chip--active {
+  background-color: var(--otds-color-brand-primary);
+  color: var(--otds-color-on-reverse);
+}
+
+/* Inactive state */
+.chip--inactive {
+  background-color: var(--otds-color-dim);
+  color: var(--otds-color-primary);
+  backdrop-filter: blur(37px);
+}
