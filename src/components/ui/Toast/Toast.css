@@ -1,0 +1,23 @@
+.toast {
+  display: flex;
+  align-items: center;
+  gap: var(--otds-size-gap-small);
+  height: 44px;
+  padding: var(--otds-size-padding-small);
+  background-color: var(--otds-bg-on-brand);
+  border: 0.5px solid var(--otds-color-border-secondary);
+  border-radius: var(--otds-size-corner-large);
+  backdrop-filter: blur(37px);
+  box-sizing: border-box;
+}
+
+.toast__message {
+  font-family: var(--otds-font-family-sans);
+  font-size: var(--otds-size-font-small);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--otds-color-primary);
+  width: 140px;
+  height: 100%;
+  margin: 0;
+}

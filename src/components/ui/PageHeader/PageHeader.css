@@ -1,0 +1,21 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: var(--otds-size-padding-xsmall, 8px);
+  width: 100%;
+  min-height: calc(2 * var(--otds-size-padding-small, 12px) + 18px);
+}
+
+.page-header__title {
+  flex: 1;
+  font-family: var(--otds-font-family-sans, 'Inter:Medium', sans-serif);
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--otds-size-font-3xlarge, 28px);
+  line-height: 1.12;
+  letter-spacing: var(--otds-size-letter-spacing-snug, -2px);
+  color: var(--otds-color-primary, white);
+  margin: 0;
+  min-height: 1px;
+  min-width: 1px;
+}

@@ -1,0 +1,53 @@
+.button {
+  display: flex;
+  position: relative;
+  border: none;
+  border-radius: var(--otds-size-corner-medium);
+  font-family: var(--otds-font-family-mono);
+  font-size: var(--otds-size-font-small);
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+/* Size variants */
+.button--large {
+  width: 140px;
+  height: 70px;
+  padding: var(--otds-size-padding-small);
+}
+
+.button--medium {
+  padding: var(--otds-size-padding-small) var(--otds-size-padding-medium);
+  gap: var(--otds-size-gap-small);
+}
+
+/* Colour variants */
+.button--brand {
+  background-color: var(--otds-color-brand-primary);
+  color: var(--otds-color-on-reverse);
+}
+
+.button--transparent-white {
+  background-color: var(--otds-bg-on-brand);
+  color: var(--otds-color-primary);
+}
+
+.button--transparent-white.button--medium {
+  align-items: center;
+  justify-content: center;
+}
+
+.button--transparent-black {
+  background-color: var(--otds-color-on-reverse-secondary);
+  color: var(--otds-color-primary);
+}
+
+/* Icon positioning */
+.button__icon {
+  position: absolute;
+  top: var(--otds-size-padding-xsmall);
+  right: var(--otds-size-padding-xsmall);
+}

@@ -1,0 +1,12 @@
+# Hide banking Figma build shortcuts during Code-to-Canvas demos.
+# The agent should discover DS components via Code Connect, not reuse pre-built scripts.
+
+.parity/figma-build-target-*.body.js
+.parity/figma-build-home-*.body.js
+.parity/figma-fix-*.body.js
+.parity/figma-helpers.js
+.parity/figma-image-hashes.json
+.parity/bank-build-manifest.json
+.parity/mcp-v5-args.json
+.parity/compiled/
+.parity/v*/

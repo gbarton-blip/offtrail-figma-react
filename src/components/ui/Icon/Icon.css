@@ -1,0 +1,5 @@
+.icon-glyph {
+  display: inline-block;
+  flex-shrink: 0;
+  color: var(--otds-color-primary);
+}

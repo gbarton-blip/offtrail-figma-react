@@ -1,0 +1,68 @@
+.map-user-location {
+  position: relative;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.map-user-location--large {
+  width: 175px;
+  height: 175px;
+}
+
+.map-user-location--small {
+  width: 129px;
+  height: 129px;
+}
+
+/* Warm orange radial gradient glow */
+.map-user-location__glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(231, 111, 0, 0.5) 0%,
+    rgba(231, 111, 0, 0.25) 30%,
+    rgba(231, 111, 0, 0.08) 60%,
+    transparent 100%
+  );
+}
+
+/* Pulsing ring animation */
+.map-user-location__pulse {
+  position: absolute;
+  inset: 15%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 191, 88, 0.4) 0%,
+    rgba(255, 147, 46, 0.2) 50%,
+    transparent 100%
+  );
+  animation: map-user-pulse 3s ease-in-out infinite;
+}
+
+/* Center dot: orange fill with white ring */
+.map-user-location__dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--otds-color-brand-tertiary, #e76f00);
+  border: 3px solid var(--otds-white-100, #ffffff);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes map-user-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.6;
+  }
+}

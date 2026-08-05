@@ -1,0 +1,49 @@
+.bank-home__logo {
+  color: var(--otds-color-primary, #fff);
+}
+
+.bank-home__balance-section {
+  gap: var(--otds-size-gap-small, 8px);
+}
+
+.bank-home__balance {
+  width: 100%;
+}
+
+.bank-home__actions {
+  display: flex;
+  gap: var(--otds-size-gap-small, 8px);
+  width: 100%;
+}
+
+.bank-home__action {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--otds-size-gap-small, 8px);
+  min-width: 0;
+}
+
+.bank-home__action-label {
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-size: var(--otds-size-font-small, 14px);
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--otds-color-secondary, rgba(255, 255, 255, 0.6));
+}
+
+.bank-home__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--otds-size-gap-small, 8px);
+}
+
+.bank-home__txns {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-medium, 16px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

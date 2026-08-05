@@ -1,0 +1,180 @@
+.tile-location {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 188px;
+  padding: var(--otds-size-padding-medium) var(--otds-size-padding-large);
+  border: 1px solid var(--tl-border);
+  border-radius: var(--otds-size-corner-large);
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Per-mode colors. The component is theme-flexible via the `mode` prop
+   (Light | Dark) independent of the dark global app theme, so each mode
+   carries its own values rather than reading global semantic tokens. */
+.tile-location--dark {
+  --tl-border: rgba(255, 255, 255, 0.1);
+  --tl-eyebrow: rgba(255, 255, 255, 0.6);
+  --tl-accent: #ffffff;
+  --tl-overlay-from: rgba(16, 7, 27, 0.3);
+  --tl-overlay-to: rgba(16, 7, 27, 0.6);
+}
+
+.tile-location--light {
+  --tl-border: rgba(16, 7, 27, 0.09);
+  --tl-eyebrow: rgba(16, 7, 27, 0.4);
+  --tl-accent: #5f788e;
+  --tl-overlay-from: rgba(187, 228, 255, 0.9);
+  --tl-overlay-to: rgba(187, 228, 255, 0.3);
+}
+
+/* Map background — fixed size positioned so its center (and thus the marker,
+   which sits at the map's center coordinate) lands at (right: 64px, bottom: 54px)
+   of the tile. The element overflows the tile bounds; the tile clips it. */
+
+.tile-location__map {
+  position: absolute;
+  right: 64px;
+  bottom: 54px;
+  width: 200%;
+  height: 200%;
+  transform: translate(50%, 50%);
+}
+
+.tile-location__map .map-view__shade {
+  display: none;
+}
+
+/* Radial overlay for text readability */
+
+.tile-location__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, var(--tl-overlay-from) 0%, var(--tl-overlay-to) 100%);
+}
+
+/* Radar rings */
+
+.tile-location__radar {
+  position: absolute;
+  right: 64px;
+  bottom: 54px;
+  width: 378px;
+  height: 378px;
+  transform: translate(50%, 50%);
+  pointer-events: none;
+}
+
+.tile-location__radar-outer {
+  position: absolute;
+  inset: 0;
+  width: 378px;
+  height: 378px;
+  opacity: 0.2;
+}
+
+.tile-location__radar-ring {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  width: 258px;
+  height: 258px;
+  opacity: 0.2;
+}
+
+.tile-location__radar-mid {
+  position: absolute;
+  left: 102px;
+  top: 101px;
+  width: 175px;
+  height: 175px;
+}
+
+.tile-location__radar-inner {
+  position: absolute;
+  left: 121px;
+  top: 121px;
+  width: 136px;
+  height: 136px;
+  opacity: 0.2;
+}
+
+/* Pin marker — bottom-center anchored to (right: 64px, bottom: 54px),
+   layered above the radar so the opaque radar-mid ring doesn't hide it.
+   MapPin is 20px wide; translate(50%, 0) shifts the element +10px right
+   so its horizontal center sits at the anchor. */
+
+.tile-location__pin {
+  position: absolute;
+  right: 64px;
+  bottom: 54px;
+  transform: translate(50%, 0);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Text content */
+
+.tile-location__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-small);
+  width: 100%;
+  z-index: 1;
+}
+
+.tile-location__eyebrow {
+  font-family: var(--otds-font-family-sans);
+  font-size: var(--otds-size-font-large);
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--tl-eyebrow);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin: 0;
+}
+
+.tile-location__location {
+  font-family: var(--otds-font-family-headline);
+  font-size: var(--otds-size-font-display);
+  font-weight: 400;
+  font-variation-settings: 'BLED' 0, 'SCAN' 0;
+  line-height: 1;
+  color: var(--tl-accent);
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+}
+
+/* CTA */
+
+.tile-location__cta {
+  position: relative;
+  display: flex;
+  gap: var(--otds-size-padding-xxsmall);
+  align-items: center;
+  z-index: 1;
+}
+
+.tile-location__cta-label {
+  font-family: var(--otds-font-family-mono);
+  font-size: var(--otds-size-font-small);
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--tl-accent);
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.tile-location__cta svg {
+  color: var(--tl-accent);
+}

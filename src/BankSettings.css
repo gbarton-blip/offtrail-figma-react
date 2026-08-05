@@ -1,0 +1,44 @@
+.bank-settings__profile {
+  display: flex;
+  align-items: center;
+  gap: var(--otds-size-gap-medium, 16px);
+  width: 100%;
+}
+
+.bank-settings__identity {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-xsmall, 4px);
+  flex: 1;
+  min-width: 0;
+}
+
+.bank-settings__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-large, 24px);
+  width: 100%;
+}
+
+.bank-settings .radio-group {
+  gap: var(--otds-size-gap-medium, 16px);
+}
+
+.bank-settings__footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-small, 8px);
+  width: 100%;
+}
+
+.bank-settings__toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--otds-app-nav-size, 64px) + var(--otds-size-padding-medium, 16px));
+  transform: translateX(-50%);
+  z-index: 20;
+  width: min(100%, 408px);
+  padding: 0 var(--otds-app-gutter-inline, 16px);
+  display: flex;
+  justify-content: center;
+}

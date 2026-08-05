@@ -1,0 +1,109 @@
+.bank-transfer__topbar-spacer {
+  width: 40px;
+}
+
+/* Recent contacts row */
+.bank-transfer__recent {
+  display: flex;
+  align-items: center;
+  gap: var(--otds-size-gap-small, 8px);
+  width: 100%;
+}
+
+.bank-transfer__recent-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Contact list */
+.bank-transfer__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-small, 8px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bank-transfer__recipient-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--otds-size-gap-medium, 16px);
+  width: 100%;
+  padding: var(--otds-size-padding-small, 12px);
+  border-radius: var(--otds-size-corner-large, 12px);
+  background: var(--otds-bg-on-brand, rgba(255, 255, 255, 0.1));
+}
+
+/* Amount step */
+.bank-transfer__amount-section {
+  gap: var(--otds-size-gap-medium, 16px);
+}
+
+.bank-transfer__amount .text-input__value {
+  font-family: var(--otds-font-family-mono, monospace);
+  font-size: var(--otds-size-font-3xlarge, 28px);
+}
+
+.bank-transfer__quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--otds-size-gap-small, 8px);
+}
+
+.bank-transfer__quick-item {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* Review overlay */
+.bank-transfer__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: var(--otds-black-400, rgba(16, 7, 27, 0.4));
+}
+
+.bank-transfer__sheet {
+  width: 100%;
+  max-width: 440px;
+}
+
+.bank-transfer__sheet-title {
+  font-family: var(--otds-font-family-sans, sans-serif);
+  font-weight: 600;
+  font-size: var(--otds-size-font-large, 18px);
+  color: var(--otds-color-primary, #fff);
+  margin-bottom: var(--otds-size-gap-medium, 16px);
+}
+
+.bank-transfer__summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-small, 8px);
+  margin-bottom: var(--otds-size-gap-large, 24px);
+}
+
+.bank-transfer__sheet-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-gap-small, 8px);
+}
+
+/* Success toast */
+.bank-transfer__toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--otds-app-nav-size, 64px) + var(--otds-size-padding-medium, 16px));
+  transform: translateX(-50%);
+  z-index: 40;
+  width: min(100%, 408px);
+  padding: 0 var(--otds-app-gutter-inline, 16px);
+  display: flex;
+  justify-content: center;
+}

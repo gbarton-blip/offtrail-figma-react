@@ -1,0 +1,53 @@
+.tile-community {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-padding-medium);
+  align-items: flex-start;
+  width: 120px;
+  padding: var(--otds-size-padding-small);
+  background-color: var(--otds-bg-brand-secondary);
+  border-top: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-left: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-right: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-bottom: var(--otds-size-border-bottom) solid var(--otds-color-border-secondary);
+  border-radius: var(--otds-size-corner-medium);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.tile-community__activity {
+  font-family: var(--otds-font-family-headline);
+  font-size: var(--otds-size-font-medium);
+  font-weight: 400;
+  font-variation-settings: 'BLED' 0, 'SCAN' 0;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: var(--otds-color-alt);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin: 0;
+}
+
+.tile-community__count {
+  display: flex;
+  gap: var(--otds-size-padding-xxsmall);
+  align-items: center;
+}
+
+.tile-community__icon {
+  color: var(--otds-color-alt);
+  flex-shrink: 0;
+}
+
+.tile-community__count-label {
+  font-family: var(--otds-font-family-mono);
+  font-size: var(--otds-size-font-small);
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--otds-color-alt);
+  white-space: nowrap;
+  margin: 0;
+}

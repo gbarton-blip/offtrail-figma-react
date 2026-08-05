@@ -1,0 +1,8 @@
+.facepile {
+  display: flex;
+  align-items: center;
+}
+
+.facepile > * + * {
+  margin-left: -20px;
+}

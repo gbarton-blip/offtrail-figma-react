@@ -1,0 +1,35 @@
+.tile-date {
+  display: flex;
+  flex-direction: column;
+  gap: var(--otds-size-padding-xxsmall);
+  align-items: center;
+  width: 54px;
+  padding: var(--otds-size-padding-small) var(--otds-size-padding-xsmall);
+  background-color: var(--otds-bg-brand-secondary);
+  border-top: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-left: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-right: var(--otds-size-border) solid var(--otds-color-border-secondary);
+  border-bottom: var(--otds-size-border-bottom) solid var(--otds-color-border-secondary);
+  border-radius: var(--otds-size-corner-medium);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--otds-color-alt);
+  box-sizing: border-box;
+}
+
+.tile-date__month {
+  font-family: var(--otds-font-family-mono);
+  font-size: var(--otds-size-font-small);
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+}
+
+.tile-date__day {
+  font-family: var(--otds-font-family-headline);
+  font-size: var(--otds-size-font-xlarge);
+  font-weight: 400;
+  font-variation-settings: 'BLED' 0, 'SCAN' 0;
+  line-height: 1;
+  margin: 0;
+}

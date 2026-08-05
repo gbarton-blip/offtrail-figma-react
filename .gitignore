@@ -1,3 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
 node_modules
 dist
+dist-ssr
+storybook-static
+*.local
+.env
+.claude/*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.claude/settings.local.json
+
+# Testing browser cache (never commit — large binaries)
+.parity/
+.playwright-mcp/
+
+# Scratch / debug artifacts
+.mcp-call2-export.cjs
+.mcp-call3-export.cjs
+.mcp2-args-only.json
+.mcp2-payload.tmp
+mcp2-*
+mcp3-*
+run-mcp2.js
+diff.png
