@@ -26,3 +26,17 @@ storybook-static
 *.sln
 *.sw?
 .claude/settings.local.json
+
+# Testing browser cache (never commit — large binaries)
+.parity/
+.playwright-mcp/
+
+# Scratch / debug artifacts
+.mcp-call2-export.cjs
+.mcp-call3-export.cjs
+.mcp2-args-only.json
+.mcp2-payload.tmp
+mcp2-*
+mcp3-*
+run-mcp2.js
+diff.png
