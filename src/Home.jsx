@@ -145,7 +145,7 @@ export default function Home() {
           <div className="home-desktop__location-panel">
             <div className="home__heading">
               <p className="home__heading-label">Current Location</p>
-              <p id="home-desktop-location-title" className="home__heading-title">
+              <p id="home-desktop-location-title" className="home__heading-title" style={{ fontSize: "62px" }}>
                 Los Angeles
               </p>
             </div>
