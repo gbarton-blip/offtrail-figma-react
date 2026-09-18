@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "MapUserLocation",
+    "filePath": "src/components/ui/MapUserLocation/MapUserLocation.jsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "large",
+      "options": [
+        "large",
+        "small"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "large": "Large",
+          "small": "Small"
+        }
+      }
+    }
+  }
+}

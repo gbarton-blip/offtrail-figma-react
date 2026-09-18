@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Toast",
+    "filePath": "src/components/ui/Toast/Toast.jsx"
+  },
+  "codeProperties": {
+    "message": {
+      "type": "string",
+      "name": "Message",
+      "defaultValue": "Notification message"
+    }
+  }
+}

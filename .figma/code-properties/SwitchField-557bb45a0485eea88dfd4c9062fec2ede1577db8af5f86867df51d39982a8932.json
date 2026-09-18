@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "SwitchField",
+    "filePath": "src/components/ui/SwitchField/SwitchField.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "defaultValue": "Label"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description",
+      "defaultValue": "Description"
+    },
+    "defaultActive": {
+      "type": "boolean",
+      "name": "Default Active",
+      "defaultValue": false
+    },
+    "showDescription": {
+      "type": "boolean",
+      "name": "Show Description",
+      "defaultValue": true
+    }
+  }
+}

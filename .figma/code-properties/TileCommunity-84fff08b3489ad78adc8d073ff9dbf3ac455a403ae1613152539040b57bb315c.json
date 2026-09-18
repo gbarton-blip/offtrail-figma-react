@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TileCommunity",
+    "filePath": "src/components/ui/TileCommunity/TileCommunity.jsx"
+  },
+  "codeProperties": {
+    "activity": {
+      "type": "string",
+      "name": "Activity",
+      "defaultValue": "Meditation"
+    },
+    "count": {
+      "type": "string",
+      "name": "Count",
+      "defaultValue": "64"
+    }
+  }
+}

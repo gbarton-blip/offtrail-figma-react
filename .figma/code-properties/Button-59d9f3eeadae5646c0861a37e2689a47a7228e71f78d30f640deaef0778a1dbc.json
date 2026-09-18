@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Button",
+    "filePath": "src/components/ui/Button/Button.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The text label displayed inside the button.",
+      "defaultValue": "Button"
+    },
+    "colour": {
+      "type": "string",
+      "name": "Colour",
+      "description": "The colour variant of the button.",
+      "defaultValue": "brand",
+      "options": [
+        "brand",
+        "transparent-white",
+        "transparent-black"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "brand": "Brand",
+          "transparent-white": "Transparent White",
+          "transparent-black": "Transparent Black"
+        }
+      }
+    },
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "description": "The size of the button.",
+      "defaultValue": "large",
+      "options": [
+        "large",
+        "medium"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "large": "Large",
+          "medium": "Medium"
+        }
+      }
+    },
+    "icon": {
+      "type": "boolean",
+      "name": "Show Icon",
+      "description": "Whether to display an arrow icon inside the button.",
+      "defaultValue": false
+    }
+  }
+}

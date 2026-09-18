@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "MapView",
+    "filePath": "src/components/ui/MapView/MapView.jsx"
+  },
+  "codeProperties": {
+    "longitude": {
+      "type": "number",
+      "name": "Longitude",
+      "defaultValue": -118.25
+    },
+    "latitude": {
+      "type": "number",
+      "name": "Latitude",
+      "defaultValue": 34.07
+    },
+    "zoom": {
+      "type": "number",
+      "name": "Zoom",
+      "defaultValue": 12,
+      "control": {
+        "type": "range",
+        "min": 1,
+        "max": 22,
+        "step": 1
+      }
+    },
+    "interactive": {
+      "type": "boolean",
+      "name": "Interactive",
+      "defaultValue": true
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "full",
+      "options": [
+        "full",
+        "card"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "full": "Full",
+          "card": "Card"
+        }
+      }
+    },
+    "mode": {
+      "type": "string",
+      "name": "Mode",
+      "defaultValue": "Dark",
+      "options": [
+        "Dark",
+        "Light"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "Dark": "Dark",
+          "Light": "Light"
+        }
+      }
+    },
+    "labels": {
+      "type": "boolean",
+      "name": "Labels",
+      "defaultValue": true
+    },
+    "showUserLocation": {
+      "type": "boolean",
+      "name": "Show User Location",
+      "defaultValue": true
+    }
+  }
+}

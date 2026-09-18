@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "WidgetCompass",
+    "filePath": "src/components/ui/WidgetCompass/WidgetCompass.jsx"
+  },
+  "codeProperties": {
+    "bearing": {
+      "type": "number",
+      "name": "Bearing",
+      "defaultValue": 355
+    },
+    "live": {
+      "type": "boolean",
+      "name": "Live",
+      "defaultValue": false
+    }
+  }
+}

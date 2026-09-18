@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Radio",
+    "filePath": "src/components/ui/Radio/Radio.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The label text for the radio option.",
+      "defaultValue": "Label"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description",
+      "description": "The description text shown below the label.",
+      "defaultValue": "Description"
+    },
+    "defaultActive": {
+      "type": "boolean",
+      "name": "Default Active",
+      "description": "The initial selected state when uncontrolled.",
+      "defaultValue": false
+    },
+    "showDescription": {
+      "type": "boolean",
+      "name": "Show Description",
+      "description": "Whether to display the description text.",
+      "defaultValue": true
+    }
+  }
+}

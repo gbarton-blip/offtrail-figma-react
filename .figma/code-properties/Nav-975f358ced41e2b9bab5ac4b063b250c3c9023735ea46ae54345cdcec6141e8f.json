@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Nav",
+    "filePath": "src/components/ui/Nav/Nav.jsx"
+  },
+  "codeProperties": {
+    "active": {
+      "type": "string",
+      "name": "Active",
+      "options": [
+        "",
+        "Home",
+        "Map",
+        "Profile"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "": "Default",
+          "Home": "Home",
+          "Map": "Map",
+          "Profile": "Profile"
+        }
+      }
+    }
+  }
+}

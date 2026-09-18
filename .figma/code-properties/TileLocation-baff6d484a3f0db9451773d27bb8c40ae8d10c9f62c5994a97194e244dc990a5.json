@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TileLocation",
+    "filePath": "src/components/ui/TileLocation/TileLocation.jsx"
+  },
+  "codeProperties": {
+    "location": {
+      "type": "string",
+      "name": "Location",
+      "defaultValue": "Location"
+    },
+    "latitude": {
+      "type": "number",
+      "name": "Latitude",
+      "defaultValue": 34.07
+    },
+    "longitude": {
+      "type": "number",
+      "name": "Longitude",
+      "defaultValue": -118.25
+    },
+    "mode": {
+      "type": "string",
+      "name": "Mode",
+      "defaultValue": "Dark",
+      "options": [
+        "Dark",
+        "Light"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "Dark": "Dark",
+          "Light": "Light"
+        }
+      }
+    }
+  }
+}

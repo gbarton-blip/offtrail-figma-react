@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Checkbox",
+    "filePath": "src/components/ui/Checkbox/Checkbox.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The label text for the checkbox.",
+      "defaultValue": "Label"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description",
+      "description": "The description text shown below the label.",
+      "defaultValue": "Description"
+    },
+    "defaultActive": {
+      "type": "boolean",
+      "name": "Default Active",
+      "description": "The initial checked state when uncontrolled.",
+      "defaultValue": false
+    },
+    "showDescription": {
+      "type": "boolean",
+      "name": "Show Description",
+      "description": "Whether to display the description text.",
+      "defaultValue": true
+    }
+  }
+}

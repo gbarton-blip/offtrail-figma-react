@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Chip",
+    "filePath": "src/components/ui/Chip/Chip.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The text label displayed inside the chip.",
+      "defaultValue": "Tag"
+    }
+  }
+}

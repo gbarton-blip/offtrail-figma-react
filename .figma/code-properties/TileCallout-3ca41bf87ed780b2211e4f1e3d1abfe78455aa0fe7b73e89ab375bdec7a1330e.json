@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TileCallout",
+    "filePath": "src/components/ui/TileCallout/TileCallout.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "defaultValue": "Label"
+    },
+    "value": {
+      "type": "string",
+      "name": "Value",
+      "defaultValue": "Value"
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "Subtle",
+      "options": [
+        "Subtle",
+        "Highlight"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "Subtle": "Subtle",
+          "Highlight": "Highlight"
+        }
+      }
+    }
+  }
+}

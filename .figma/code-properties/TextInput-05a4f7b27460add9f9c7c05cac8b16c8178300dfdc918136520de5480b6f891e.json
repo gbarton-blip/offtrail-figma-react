@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TextInput",
+    "filePath": "src/components/ui/TextInput/TextInput.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "defaultValue": "Label"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description",
+      "defaultValue": "Description"
+    },
+    "showLabel": {
+      "type": "boolean",
+      "name": "Show Label",
+      "defaultValue": true
+    },
+    "showDescription": {
+      "type": "boolean",
+      "name": "Show Description",
+      "defaultValue": true
+    },
+    "placeholder": {
+      "type": "string",
+      "name": "Placeholder",
+      "defaultValue": "Value"
+    }
+  }
+}

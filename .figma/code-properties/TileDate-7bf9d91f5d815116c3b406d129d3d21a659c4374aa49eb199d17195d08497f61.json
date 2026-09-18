@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TileDate",
+    "filePath": "src/components/ui/TileDate/TileDate.jsx"
+  },
+  "codeProperties": {
+    "day": {
+      "type": "string",
+      "name": "Day",
+      "defaultValue": "28"
+    },
+    "month": {
+      "type": "string",
+      "name": "Month",
+      "defaultValue": "Jun"
+    }
+  }
+}

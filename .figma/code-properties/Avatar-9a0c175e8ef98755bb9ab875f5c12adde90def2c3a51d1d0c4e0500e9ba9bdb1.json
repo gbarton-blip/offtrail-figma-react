@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Avatar",
+    "filePath": "src/components/ui/Avatar/Avatar.jsx"
+  },
+  "codeProperties": {
+    "src": {
+      "type": "string",
+      "name": "Source",
+      "description": "The image source URL."
+    },
+    "alt": {
+      "type": "string",
+      "name": "Alt Text",
+      "description": "Alternative text for the avatar image.",
+      "defaultValue": ""
+    },
+    "size": {
+      "type": "number",
+      "name": "Size",
+      "description": "The size of the avatar in pixels.",
+      "defaultValue": 80,
+      "options": [
+        80,
+        56,
+        40,
+        32
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "32": "32px",
+          "40": "40px",
+          "56": "56px",
+          "80": "80px"
+        }
+      }
+    }
+  }
+}

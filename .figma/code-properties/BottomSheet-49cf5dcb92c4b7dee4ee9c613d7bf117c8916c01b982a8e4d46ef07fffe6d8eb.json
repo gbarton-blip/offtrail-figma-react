@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "BottomSheet",
+    "filePath": "src/components/ui/BottomSheet/BottomSheet.jsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "Default",
+      "options": [
+        "Default",
+        "Tall"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "Default": "Default",
+          "Tall": "Tall"
+        }
+      }
+    }
+  }
+}

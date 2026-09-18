@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "RadioGroup",
+    "filePath": "src/components/ui/RadioGroup/RadioGroup.jsx"
+  },
+  "codeProperties": {
+    "showDescriptions": {
+      "type": "boolean",
+      "name": "Show Descriptions",
+      "description": "Whether to display description text for each radio option.",
+      "defaultValue": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Carousel",
+    "filePath": "src/components/ui/Carousel/Carousel.jsx"
+  },
+  "codeProperties": {
+    "title": {
+      "type": "string",
+      "name": "Title"
+    },
+    "linkLabel": {
+      "type": "string",
+      "name": "Link Label",
+      "defaultValue": "View all"
+    },
+    "showControls": {
+      "type": "boolean",
+      "name": "Show Controls",
+      "defaultValue": false
+    }
+  }
+}

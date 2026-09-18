@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Icon",
+    "filePath": "src/components/ui/Icon/Icon.jsx"
+  },
+  "codeProperties": {
+    "glyph": {
+      "type": "string",
+      "name": "Glyph",
+      "description": "The icon glyph to render.",
+      "defaultValue": "x",
+      "options": [
+        "x",
+        "check",
+        "info",
+        "warning",
+        "plus",
+        "out",
+        "arrow-up-right",
+        "question",
+        "caret-down",
+        "caret-up",
+        "person"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "x": "X",
+          "check": "Check",
+          "info": "Info",
+          "warning": "Warning",
+          "plus": "Plus",
+          "out": "Out",
+          "arrow-up-right": "Arrow Up Right",
+          "question": "Question",
+          "caret-down": "Caret Down",
+          "caret-up": "Caret Up",
+          "person": "Person"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "PageHeader",
+    "filePath": "src/components/ui/PageHeader/PageHeader.jsx"
+  },
+  "codeProperties": {
+    "title": {
+      "type": "string",
+      "name": "Title",
+      "defaultValue": "Heading"
+    },
+    "showShareButton": {
+      "type": "boolean",
+      "name": "Show Share Button",
+      "defaultValue": true
+    }
+  }
+}

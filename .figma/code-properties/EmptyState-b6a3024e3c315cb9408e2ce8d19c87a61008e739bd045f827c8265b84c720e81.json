@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "EmptyState",
+    "filePath": "src/components/ui/EmptyState/EmptyState.jsx"
+  },
+  "codeProperties": {
+    "message": {
+      "type": "string",
+      "name": "Message",
+      "defaultValue": "Something went wrong"
+    },
+    "action": {
+      "type": "string",
+      "name": "Action",
+      "defaultValue": "Refresh or try again"
+    }
+  }
+}

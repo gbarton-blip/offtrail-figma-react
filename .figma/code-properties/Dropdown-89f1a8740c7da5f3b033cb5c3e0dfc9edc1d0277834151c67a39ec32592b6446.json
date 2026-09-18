@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Dropdown",
+    "filePath": "src/components/ui/Dropdown/Dropdown.jsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The label text shown above the dropdown.",
+      "defaultValue": "Label"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description",
+      "description": "The description text shown below the dropdown.",
+      "defaultValue": "Description"
+    },
+    "showLabel": {
+      "type": "boolean",
+      "name": "Show Label",
+      "description": "Whether to display the label.",
+      "defaultValue": true
+    },
+    "showDescription": {
+      "type": "boolean",
+      "name": "Show Description",
+      "description": "Whether to display the description.",
+      "defaultValue": true
+    },
+    "placeholder": {
+      "type": "string",
+      "name": "Placeholder",
+      "description": "Placeholder text shown when no option is selected.",
+      "defaultValue": "Select an option"
+    }
+  }
+}

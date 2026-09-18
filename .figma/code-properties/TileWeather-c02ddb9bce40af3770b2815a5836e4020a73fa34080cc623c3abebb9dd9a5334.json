@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TileWeather",
+    "filePath": "src/components/ui/TileWeather/TileWeather.jsx"
+  },
+  "codeProperties": {
+    "time": {
+      "type": "string",
+      "name": "Time",
+      "defaultValue": "3:43PM"
+    },
+    "conditions": {
+      "type": "string",
+      "name": "Conditions",
+      "defaultValue": "Light Rain"
+    },
+    "temp": {
+      "type": "string",
+      "name": "Temperature",
+      "defaultValue": "65°F"
+    },
+    "low": {
+      "type": "string",
+      "name": "Low",
+      "defaultValue": "42°"
+    },
+    "high": {
+      "type": "string",
+      "name": "High",
+      "defaultValue": "67°"
+    }
+  }
+}

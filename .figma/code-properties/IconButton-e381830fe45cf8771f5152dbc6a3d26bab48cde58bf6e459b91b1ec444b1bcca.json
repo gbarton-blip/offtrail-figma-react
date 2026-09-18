@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "IconButton",
+    "filePath": "src/components/ui/IconButton/IconButton.jsx"
+  },
+  "codeProperties": {
+    "glyph": {
+      "type": "string",
+      "name": "Glyph",
+      "description": "The icon glyph to display inside the button.",
+      "defaultValue": "caret"
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "description": "The visual style variant of the icon button.",
+      "defaultValue": "primary",
+      "options": [
+        "primary",
+        "outline",
+        "neutral"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "primary": "Primary",
+          "outline": "Outline",
+          "neutral": "Neutral"
+        }
+      }
+    },
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "description": "The size of the icon button.",
+      "defaultValue": "medium",
+      "options": [
+        "medium",
+        "small"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "medium": "Medium",
+          "small": "Small"
+        }
+      }
+    },
+    "disabled": {
+      "type": "boolean",
+      "name": "Disabled",
+      "description": "Whether the icon button is disabled.",
+      "defaultValue": false
+    }
+  }
+}

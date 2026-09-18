@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "NavTab",
+    "filePath": "src/components/ui/NavTab/NavTab.jsx"
+  },
+  "codeProperties": {
+    "icon": {
+      "type": "string",
+      "name": "Icon",
+      "defaultValue": "home"
+    },
+    "label": {
+      "type": "string",
+      "name": "Label"
+    },
+    "active": {
+      "type": "boolean",
+      "name": "Active",
+      "defaultValue": false
+    }
+  }
+}

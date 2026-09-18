@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "AppShell",
+    "filePath": "src/components/ui/AppShell/AppShell.jsx"
+  },
+  "codeProperties": {
+    "navVisibility": {
+      "type": "string",
+      "name": "Nav Visibility",
+      "defaultValue": "all",
+      "options": [
+        "all",
+        "desktop",
+        "none"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "all": "All",
+          "desktop": "Desktop",
+          "none": "None"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "SearchInput",
+    "filePath": "src/components/ui/SearchInput/SearchInput.jsx"
+  },
+  "codeProperties": {
+    "placeholder": {
+      "type": "string",
+      "name": "Placeholder",
+      "defaultValue": "Find things to do..."
+    },
+    "defaultValue": {
+      "type": "string",
+      "name": "Default Value",
+      "defaultValue": ""
+    }
+  }
+}
