@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "CardEvent",
+    "filePath": "src/components/ui/CardEvent/CardEvent.jsx"
+  },
+  "codeProperties": {
+    "src": {
+      "type": "string",
+      "name": "Image URL",
+      "description": "The source URL for the event image."
+    },
+    "title": {
+      "type": "string",
+      "name": "Title",
+      "description": "The event title.",
+      "defaultValue": "Weekend Surf Session"
+    },
+    "location": {
+      "type": "string",
+      "name": "Location",
+      "description": "The event location.",
+      "defaultValue": "Ventura, CA"
+    },
+    "people": {
+      "type": "string",
+      "name": "People",
+      "description": "Number of people attending the event.",
+      "defaultValue": "12"
+    },
+    "time": {
+      "type": "string",
+      "name": "Time",
+      "description": "The event time range.",
+      "defaultValue": "6:30AM – 1:00PM"
+    },
+    "month": {
+      "type": "string",
+      "name": "Month",
+      "description": "The month of the event displayed on the date tile.",
+      "defaultValue": "Jun"
+    },
+    "day": {
+      "type": "string",
+      "name": "Day",
+      "description": "The day of the event displayed on the date tile.",
+      "defaultValue": "12"
+    },
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "description": "The size variant of the card.",
+      "defaultValue": "large",
+      "options": [
+        "large",
+        "small"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "large": "Large",
+          "small": "Small"
+        }
+      }
+    },
+    "overlay": {
+      "type": "string",
+      "name": "Overlay",
+      "description": "Optional overlay text shown on the image when size is large.",
+      "defaultValue": ""
+    }
+  }
+}
