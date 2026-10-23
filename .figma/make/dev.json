@@ -3,44 +3,45 @@
     "priorityPaths": {
       "prefer": [
         "src/App.jsx",
+        "src/Home.jsx",
+        "src/Map.jsx",
+        "src/Profile.jsx",
+        "src/EventDetail.jsx",
         "src/BankHome.jsx",
         "src/BankSettings.jsx",
         "src/BankStatements.jsx",
         "src/BankTransfer.jsx",
-        "src/EventDetail.jsx",
-        "src/Map.jsx",
-        "src/Profile.jsx",
         "src/components/BankTabBar.jsx",
         "src/components/banking/**/*.jsx",
-        "src/components/ui/**/*.jsx"
+        "src/components/ui/**/*.jsx",
+        "src/components/ui/**/*.css",
+        "src/*.css"
       ],
       "deprioritize": [
-        "mobile/**/*.{js,jsx,ts,tsx}",
-        "src/data/**/*",
-        "src/components/ui/MapView/mapStyles.js",
-        "src/components/ui/MapView/recolorMap.js"
+        "src/data/**",
+        "src/components/util/**",
+        "src/main.jsx"
       ],
       "exclude": [
-        "**/*.figma.ts",
-        "**/*.figma.tsx",
-        "**/*.figma.js",
-        "**/*.figma.jsx",
-        "**/*.stories.jsx",
-        "**/*.stories.tsx",
-        "**/*.stories.js",
-        "**/*.stories.ts",
+        "src/**/*.figma.ts",
+        "src/**/*.figma.tsx",
+        "src/**/*.figma.js",
+        "src/**/*.figma.jsx",
+        "src/**/*.stories.jsx",
+        "src/**/*.stories.ts",
+        "src/**/*.stories.tsx",
+        "src/**/*.test.{js,jsx,ts,tsx}",
+        "src/**/*.spec.{js,jsx,ts,tsx}",
         "node_modules/**",
-        ".storybook/**",
         "dist/**",
-        "build/**",
-        "mobile/.figma/**",
-        "mobile/assets/**",
-        "src/data/**"
+        ".storybook/**",
+        "vite.config.{js,ts}"
       ]
     },
     "libraryPaths": {
       "local": [
-        "src/components/ui/**/*.jsx"
+        "src/components/ui/**/*.jsx",
+        "src/components/ui/**/*.css"
       ],
       "external": []
     },
@@ -49,64 +50,56 @@
     },
     "exclusions": [
       {
-        "glob": "**/*.figma.ts",
-        "reason": "Figma Code Connect mapping files are not UI source anchors; they describe Figma-to-code mappings and should never be selected as point-and-edit targets."
+        "glob": "src/**/*.figma.ts",
+        "reason": "Figma Code Connect mapping files are not UI source anchors; they describe mappings to Figma components and should not be selected as point-and-edit targets."
       },
       {
-        "glob": "**/*.figma.tsx",
-        "reason": "Figma Code Connect mapping files are not UI source anchors; they describe Figma-to-code mappings and should never be selected as point-and-edit targets."
+        "glob": "src/**/*.figma.tsx",
+        "reason": "Figma Code Connect mapping files are not UI source anchors; they describe mappings to Figma components and should not be selected as point-and-edit targets."
       },
       {
-        "glob": "**/*.figma.js",
-        "reason": "Figma Code Connect mapping files are not UI source anchors."
+        "glob": "src/**/*.figma.js",
+        "reason": "Figma Code Connect mapping files are not UI source anchors; they describe mappings to Figma components and should not be selected as point-and-edit targets."
       },
       {
-        "glob": "**/*.figma.jsx",
-        "reason": "Figma Code Connect mapping files are not UI source anchors."
+        "glob": "src/**/*.figma.jsx",
+        "reason": "Figma Code Connect mapping files are not UI source anchors; they describe mappings to Figma components and should not be selected as point-and-edit targets."
       },
       {
-        "glob": "**/*.stories.jsx",
-        "reason": "Storybook story files are catalog/documentation fixtures, not the real UI implementation, and should not serve as source anchors."
+        "glob": "src/**/*.stories.jsx",
+        "reason": "Storybook story files define rendering scenarios for isolated component testing and are not the authoritative source for production UI rendering."
       },
       {
-        "glob": "**/*.stories.tsx",
-        "reason": "Storybook story files are catalog/documentation fixtures, not the real UI implementation."
+        "glob": "src/**/*.stories.ts",
+        "reason": "Storybook story files define rendering scenarios for isolated component testing and are not the authoritative source for production UI rendering."
       },
       {
-        "glob": "**/*.stories.js",
-        "reason": "Storybook story files are catalog/documentation fixtures, not the real UI implementation."
+        "glob": "src/**/*.stories.tsx",
+        "reason": "Storybook story files define rendering scenarios for isolated component testing and are not the authoritative source for production UI rendering."
       },
       {
-        "glob": "**/*.stories.ts",
-        "reason": "Storybook story files are catalog/documentation fixtures, not the real UI implementation."
+        "glob": "src/**/*.test.{js,jsx,ts,tsx}",
+        "reason": "Test files are not production UI source and should not be selected as point-and-edit anchors."
+      },
+      {
+        "glob": "src/**/*.spec.{js,jsx,ts,tsx}",
+        "reason": "Spec/test files are not production UI source and should not be selected as point-and-edit anchors."
       },
       {
         "glob": "node_modules/**",
-        "reason": "Third-party dependency code; not part of the project's editable UI source."
+        "reason": "Third-party dependencies are not project-owned source and should never be edited as point-and-edit targets."
+      },
+      {
+        "glob": "dist/**",
+        "reason": "Build output is generated and should not be selected as a source anchor."
       },
       {
         "glob": ".storybook/**",
         "reason": "Storybook configuration files are tooling, not UI source anchors."
       },
       {
-        "glob": "dist/**",
-        "reason": "Build output; generated files should never be edited directly."
-      },
-      {
-        "glob": "build/**",
-        "reason": "Build output; generated files should never be edited directly."
-      },
-      {
-        "glob": "mobile/.figma/**",
-        "reason": "Figma Make internal configuration files for the mobile subproject."
-      },
-      {
-        "glob": "mobile/assets/**",
-        "reason": "Static image and icon assets are not UI source anchors."
-      },
-      {
-        "glob": "src/data/**",
-        "reason": "Static data files (events.js, banking.js) contain mock/fixture data, not UI rendering logic."
+        "glob": "vite.config.{js,ts}",
+        "reason": "Build tool configuration is not a UI source anchor."
       }
     ],
     "generated": {
@@ -114,9 +107,9 @@
       "source": "setup-agent.point-and-edit-path-classifier",
       "prompt": "same-turn-setup-subagent-v5",
       "model": "claude-sonnet-4-6",
-      "createdAt": "2026-09-29T00:00:00.000Z",
-      "confidence": 0.92,
-      "explanation": "The repository has a clear single active web app root at src/ with well-separated page screens, app-specific composites, and a local design-system library under src/components/ui/ backed by Storybook stories and Code Connect files, making all buckets straightforward to classify."
+      "createdAt": "2026-10-15T00:00:00.000Z",
+      "confidence": 0.97,
+      "explanation": "High confidence: single-package React/Vite app with a clear src/ source root, well-delineated app-level screens, app-specific component subfolders, and a consistently structured local UI library under src/components/ui/ with Storybook stories and Code Connect mapping files that are straightforward to exclude."
     }
   }
 }
